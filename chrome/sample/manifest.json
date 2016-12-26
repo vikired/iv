@@ -1,0 +1,17 @@
+{
+  "name": "Hello World!",
+  "version": "1.0",
+  "description": "My first Chrome extension.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "popup.html",
+	"default_title":"Tubulu"
+
+  },
+  "homepage_url": "http://insert_web_site_here.com/",
+        "background_page": "background.html",
+        "permissions": [
+          "http://insert_base_rss_url_here.com/*"
+        ],
+  "manifest_version": 2,
+}

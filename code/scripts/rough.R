@@ -1,0 +1,7 @@
+source("D:/Proto/Invoice/code/scripts/dataprepfunction.R")
+source("D:/Proto/Invoice/code/scripts/dataprep.R")
+library("tm","text2vec")
+#cleaninvoicecsv("aug.csv")
+#cleaninvoicecsv("jul.csv")
+#cleaninvoicecsv("guna.csv")
+cleaninvoicecsv("shalaka.csv")

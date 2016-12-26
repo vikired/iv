@@ -1,0 +1,53 @@
+
+Airtel Bill:
+
+Name				=		font, font size
+Bill Number			=		data length, data type
+Bill Date			=		,,
+Amount				=		this requires positioning
+What Bill			=		
+
+
+
+find nearest static text?
+	how to find static text?
+		To find static text, you need minimum of two invoices
+	how to find nearest?
+		find relative y, find relative x
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	https://cran.r-project.org/web/packages/text2vec/vignettes/text-vectorization.html
+	
+	
+	it_pdata=itoken(pdata$ngramtext,preprocessor=prep_fun,tokenizer=tok_fun,ids=pdata$X1,progressbar=FALSE)
+
+prep_fun = tolower
+tok_fun = word_tokenizer
+
+
+ vocab = create_vocabulary(it_pdata)
+
+vectorizer = vocab_vectorizer(vocab)
+
+dtm_train = create_dtm(it_pdata, vectorizer)
+
+identical(rownames(dtm_train),pdata$X1)
+
+mydtm_df=data.frame(as.matrix(dtm_train))
+
+rr=cbind(pdata,mydtm_df)
+
+paste(colnames(dtm_train),collapse="+")

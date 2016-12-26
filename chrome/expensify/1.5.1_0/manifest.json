@@ -1,0 +1,31 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "logo48.png",
+      "default_popup": "popup.html",
+      "default_title": "Expensify Web Receipts"
+   },
+   "content_scripts": [ {
+      "js": [ "constant.js", "browser.js", "intab.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "img-src 'self' data: http://www.google-analytics.com; object-src 'self'; script-src 'self' https://ssl.google-analytics.com/ga.js;",
+   "description": "Create receipts for your online purchases in two clicks with Expensify Web Receipts.",
+   "icons": {
+      "128": "logo128.png",
+      "16": "logo16.ico",
+      "48": "logo48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRvWjMi65WuzcJoNfomVI01Dfhp6hKT5qre4sLUYFlKnFFAhsW9XyelVPSQq5/a1V+ryioW7dH1HOzBZChJJGZ8riV5JNH7aLT/AK70ir4mmvxZTcSAXITwFvXx9p3woH+eD1KNzV0UZBROKblOzDWvrdr+C9R6JNCYG3bHpoaQwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "22",
+   "name": "Expensify Web Receipts",
+   "options_page": "auth.html",
+   "permissions": [ "\u003Call_urls>", "tabs", "notifications", "contextMenus", "webNavigation" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.1",
+   "web_accessible_resources": [ "logo128.png" ]
+}

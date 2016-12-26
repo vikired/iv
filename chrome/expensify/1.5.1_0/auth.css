@@ -1,0 +1,44 @@
+.hide {
+    display: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    border: none;
+}
+
+#btn_signout {
+    background-color: transparent;
+    border: none;
+    color: #373737;
+    display: block;
+    float: right;
+    font-size: 19px;
+    margin: 0 5px 0 0;
+    padding: 17px 18px 20px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#btn_signout:hover {
+    background-color: #646464;
+    color: white;
+}
+
+div.iframe {
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+iframe {
+    background: none transparent;
+    border: none;
+    height: 420px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 300px;
+}

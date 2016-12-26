@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expensify Chrome Extension</title>
+        <link rel="stylesheet" href="popup.css"/>
+    </head>
+    <body>
+        <div class="ext-wrapper">
+            <div class="logo">
+                <img src="img/logo.png" width="50" height="177" />
+            </div>
+
+            <div class="actions">
+                <div class="button hide" id="cancel" value="Cancel">Cancel Upload</div>
+                <div class="button" id="send_receipt" value="create_receipt">Create Receipt From Page</div>
+                <div class="button" id="visit_site" value="view_receipt">View My Receipts</div>
+            </div>
+
+            <div class="footer">
+                <div class="inner">
+                    <span id="help_page" value="help_page">Help</span>
+                    <span data-toggle="dropdown" id="signout" value="signout">Sign Out</span>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="constant.js"></script>
+        <script type="text/javascript" src="browser.js"></script>
+        <script type="text/javascript" src="analytics.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
+    </body>
+</html>

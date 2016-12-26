@@ -1,0 +1,17 @@
+digital,Len,Bold,Italic,Category,Text,Outcome
+N,10,1,0,phone,9841362800,1
+N,3,1,1,code,123,0
+T,16,0,1,address,munnireddylayout,0
+T,11,0,0,text,abcasdfksdf,0
+N,10,1,0,phone,7667387613,1
+T,11,1,0,name,vigneswaran,0
+N,9,0,0,account,123456789,0
+T,13,1,0,text,asdfkasdfasdf,0
+C,8,1,1,code,12312321,0
+C,9,0,1,code,987654321,0
+N,10,0,1,phone,8602058223,1
+T,5,1,0,text,32red,0
+T,12,1,0,text,jhsadjkfasdf,0
+N,10,0,0,phone,3456789012,1
+N,10,0,1,phone,2345678901,1
+N,9,0,0,phone,2345678901,0
